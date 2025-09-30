@@ -1,0 +1,10 @@
+<!Doctype HTML>
+<HTML>
+              <Head>
+             <Title>gauri<Title>
+        <Head>
+        <Body>
+           <HI> gauri<IHI>
+        <P>               <P>
+        <Body>
+     </HTML>
