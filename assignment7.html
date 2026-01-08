@@ -1,0 +1,237 @@
+<!--
+Assinment 07: Using Functions in Javascript
+Objective: Learn how to design input form elements such as textboxes,radio buttons, checkboxes,dropdowns, and buttons
+Tasks:Create a simple webpage that uses Javascript to:
+     Display an alert box with a welcome messege.
+	 Show a confirm box asking the user for a decision and handle the response.
+	 Display a prompt box to collect user input and show the entered value on the page.
+Course: VSEC-101-CA: HTML and Webpage designing
+     College: APIMR, Landiwadi
+	 University: Savitribai Phule pune University
+-->
+<!doctype html>
+<html>
+<head>
+ <!-- The <head> section contains metadata and the title of the page -->
+	  <title> creating hyperlinks and images in html </title>
+</head>
+
+<body bgcolor="f5fcff" text="#000000"> <!-- Sets a light background color and black text-->
+
+     <!-- Heading section -->
+	 <h1 align="center">Creating lists in HTML</h1>
+	 <h2 align="center">Savitribai Phule Pune University</h2>
+	 <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+	 <hr color="blue" size="3">
+	 
+	<!-- Quetion1:Inline CSS-->
+	<h1>Question Create alert box game using Internal script</h1>
+	<h2>Example</h2>
+	<script type="text/Javascript">
+	function Hello(){
+	alert ("Hello, World");
+	}
+	</script>
+	<body>
+	 <input type="button" onclick="Hello();" name="ok" value="Click Me"/>
+	 <body>
+	 </html>
+	 
+	<h3> student activity</h3>
+	
+	<div class="button-container">
+	     <button class="blue" onclick="showAlert('Blue')">Blue,</button>
+		 <button class="black" onclick="showAlert('Black')">Black</button>
+		 <button class="red" onclick="showAlert('Red')">Red</button>
+	</div>
+	
+	<script>
+	     function showAlert(color) {
+		         alert(color + "color was clicked!");
+		 }
+	</script>
+	
+	</body>
+	</html>
+	
+    <!--Question: 2-->
+	<h1>Question 2:Create alert box game using external script</h1>
+	<h2>Example</h2>
+
+      <script src="/html/script.js" type="text/JavaScript"/></script>
+      </head>
+    <body>
+      <h2>Alert box Game</h2>
+	  <!-- Button That calls the Hello() function when clicked -->
+	  <input type="button" onclick="Hello();" name="ok" value="Click Me"/>
+	</body>
+	</html>
+	
+	<h3> student Activity</h3>
+
+       	 <script src="script. ja" type="text/javascript"></script>
+	      
+    <input type="button" onclick="alert('Up pressed');" value="Up" /><br>
+    <input type="button" onclick="alert('Left pressed');" value="Left" />
+    <input type="button" onclick="alert('Enter pressed');" value="Enter" />
+    <input type="button" onclick="alert('Right pressed');" value="Right" /><br>
+    <input type="button" onclick="alert('Down pressed');" value="Down" />
+    </body>
+	</html>
+	
+	<!--Question:3-->
+	<h1>Question 3:Display personal information using Javascript</h1>
+	<h2>Example: Display "Hello World!"</h2>
+
+	<html> 
+	<body>
+	 <!-- Button That calls the Hello() function when clicked -->
+	 <input type="button" onclick="Hello();" name="ok" value="Hello world"/>
+	      <p id="demo"></p>
+		  
+		  <script>
+		  document.getElementById("demo").innerHTML="Hello World!";
+		  </script>
+	</body>
+	</html>
+	
+	<h3>student activity</h3>
+	<html>
+	<body>
+	<table border="1" cellpadding="8">
+    <tr>
+        <td>Name</td>
+        <td id="name"></td>
+    </tr>
+    <tr>
+        <td>Class</td>
+        <td id="class"></td>
+    </tr>
+    <tr>
+        <td>College Name</td>
+        <td id="college"></td>
+    </tr>
+    <tr>
+        <td>Name of your best friend</td>
+        <td id="friend"></td>
+    </tr>
+    <tr>
+        <td>Favorite Subject</td>
+        <td id="subject"></td>
+    </tr>
+</table>
+
+<script>
+    document.getElementById("name").innerHTML = "Gauri Kewlani";
+    document.getElementById("class").innerHTML = "BCA 2025";
+    document.getElementById("college").innerHTML = "Adhrao Patil Institute of Management and Research, Landewadi";
+    document.getElementById("friend").innerHTML = "Ishfa Meer";
+    document.getElementById("subject").innerHTML = "HTML and Webpage Designing";
+</script>
+
+</body>
+</html>
+
+<!--Question:4 -->
+<h1>Question 4:Change background color using Javascript</h1>
+<h2>Example:Change background color to yellow</h2>
+ 
+<html>
+<body>
+      <input type="button" value="Yellow" onclick="changeColor('Yellow')">
+	  <script>
+	          function chaneColor(color)
+			  {
+			    document.body.style.backgroundColor= color;
+			  }
+			</script>
+			</body>
+			</html>
+			
+<h3>Student Activity</h3>
+<html>
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+
+<h2>Change Background Color</h2>
+
+<input type="button" value="Green" onclick="changeColor('green')">
+<input type="button" value="Pink" onclick="changeColor('pink')">
+<input type="button" value="Blue" onclick="changeColor('blue')">
+
+<script>
+    function changeColor(color)
+    {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+
+</body>
+</html>
+
+<!--Question:5-->
+<h1>Simple calculator using JavaScript</h1>
+<h2>Example: Add two numbers and display result</h2>
+
+<html>
+<body>
+Enter First Number: <input type="text" id="n1"><br><br>
+Enter Second Number: <input type="text" id="n2"><br><br>
+<input type="button" value="Add" onclick="add(add)">
+<p id="result"></p>
+<script>
+function add(add)
+{
+ var a = parseInt(document.getElementById("n1").value);
+ var b = parseInt(document.getElementById("n2").value);
+ document.getElementById("result").innerHTML = "Result = " + (a + b);
+}
+</script>
+</body>
+</html>
+
+<h3>Student Activity</h3>
+<html>
+<body>
+    Enter First Number: <input type="text" id="n1"><br><br>
+    Enter Second Number: <input type="text" id="n2"><br><br>
+    <input type="button" value="Add" onclick="add(add)">
+    <input type="button" value="Subtract" onclick="subtract(subtract)">
+    <input type="button" value="Multiply" onclick="multiply(multiply)">
+    <input type="button" value="Divide" onclick="divide(divide)">
+    <p id="result"></p>
+
+    <script>
+        function add(add) {
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML = "Result = " + (a + b);
+        }
+        function subtract(subtract) {
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML = "Result = " + (a - b);
+        }
+        function multiply(multiply) {
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML = "Result = " + (a * b);
+        }
+        function divide(divide) {
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            // Check for division by zero
+            if (b == 0) {
+                document.getElementById("result").innerHTML = "Cannot divide by zero";
+            } else {
+                document.getElementById("result").innerHTML = "Result = " + (a / b);
+            }
+        }
+    </script>
+</body>
+</html>
+
+	
+	
