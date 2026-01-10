@@ -1,0 +1,246 @@
+<!--
+Assinment 08: Using Functions in JavaScript that performs arithmetic operations
+Objective: To understand and use JavaScript functions for performing arithmetic operations like addition, subtraction, multiplication, and division.
+Tasks: Create a JavaScript program that performs the following arithmetic operations using functions:
+Addition, Subtraction, Multiplication, Division
+Course: VSEC-101-CA: HTML and Webpage designing
+     College: APIMR, Landiwadi
+	 University: Savitribai Phule pune University
+-->
+
+ <!-- The <head> section contains metadata and the title of the page -->
+	  <title> creating hyperlinks and images in html </title>
+</head>
+
+<body bgcolor="f5fcff" text="#000000"> <!-- Sets a light background color and black text-->
+
+     <!-- Heading section -->
+	 <h1 align="center">Creating lists in HTML</h1>
+	 <h2 align="center">Savitribai Phule Pune University</h2>
+	 <h3 align="center">Course: VSEC-101-CA: HTML and Webpage Designing</h3>
+	 <hr color="blue" size="3">
+	 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition using JavaScript</title>
+</head>
+<body>
+
+<!-- Question 1: Addition -->
+<h1>Question 1: Addition using JavaScript Function</h1>
+<h2>Example: Add two numbers</h2>
+Enter First Number:
+<input type="text" id="n1"><br><br>
+
+Enter Second Number:
+<input type="text" id="n2"><br><br>
+
+<input type="button" value="Add" onclick="add()">
+
+<p id="result"></p>
+<script>
+function add()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Addition = " + (a + b);
+}
+
+</script>
+
+</body>
+</html>
+
+<h3>student activity</h3>
+<html>
+<head>
+    <title>Add Two Numbers</title>
+</head>
+<body>
+    <h2>Add Two Numbers using JavaScript Function</h2>
+
+Enter First Number:
+<input type="text" id="n1"><br><br>
+
+Enter Second Number:
+<input type="text" id="n2"><br><br>
+
+<input type="button" value="Add" onclick="add()">
+
+<p id="result"></p>
+
+<script>
+    function add()
+    {
+        var a = parseInt(document.getElementById("n1").value);
+        var b = parseInt(document.getElementById("n2").value);
+        document.getElementById("result").innerHTML = "Addition = " + (a + b);
+    }
+</script>
+
+</body>
+</html>
+
+
+<!-- Question 2: Subtraction -->
+<h1>Question 2: Subtraction using JavaScript Function</h1>
+<h1>student activity</h1>
+ <h2>Subtraction using JavaScript</h2>
+<html>
+<head>
+
+Enter First Number:
+<input type="text" id="n1"><br><br>
+
+Enter Second Number:
+<input type="text" id="n2"><br><br>
+
+<input type="button" value="Subtract" onclick="sub()">
+
+<p id="result"></p>
+
+<script>
+function sub()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Subtraction = " + (a - b);
+}
+</script>
+
+</body>
+</html>
+
+<!--Question 3: Multiplication-->
+<h1>Question 3: Multiplication using JavaScript Function</h1>
+<h1>student activity</h1>
+
+<head>
+    <h2>Multiplication using JavaScript</h2>
+</head>
+<body>
+
+Enter First Number:
+<input type="text" id="n1"><br><br>
+
+Enter Second Number:
+<input type="text" id="n2"><br><br>
+
+<input type="button" value="Multiply" onclick="mul()">
+
+<p id="result"></p>
+
+<script>
+function mul()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Multiplication = " + (a * b);
+}
+</script>
+
+</body>
+</html>
+
+
+<!-- Question 4: Division -->
+<h1>Question 4: Division using JavaScript Function</h1>
+<h1>student activity</h1>
+
+<html>
+<head>
+    <h2>Division using JavaScript</h2>
+</head>
+<body>
+
+Enter First Number:
+<input type="text" id="n1"><br><br>
+
+Enter Second Number:
+<input type="text" id="n2"><br><br>
+
+<input type="button" value="Division" onclick="div(Division)">
+
+<p id="result"></p>
+
+<script>
+function div()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Division = " + (a / b);
+}
+</script>
+
+</body>
+
+<!--Question 5:Simple Calculator-->
+<h1>Question 5: Simple Calculator using JavaScript Functions</h1>
+<h1>student activity</h1>
+
+<html>
+<head>
+    <h3>Simple Calculator using JavaScript</h3>
+</head>
+<body>
+
+Enter First Number:
+<input type="text" id="n1"><br><br>
+
+Enter Second Number:
+<input type="text" id="n2"><br><br>
+
+<input type="button" value="Add" onclick="add(add)">
+<input type="button" value="Subtract" onclick="sub(sub)">
+<input type="button" value="Multiply" onclick="mul(mul)">
+<input type="button" value="Division" onclick="div(div)">
+
+<p id="result"></p>
+
+<script>
+function add()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Addition = " + (a + b);
+}
+
+function sub()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Subtraction = " + (a - b);
+}
+
+function mul()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Multiplication = " + (a * b);
+}
+
+function div()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("result").innerHTML = "Division = " + (a / b);
+}
+</script>
+
+</body>
+</html>
+<!-- Footer section -->
+    <footer>
+        <p align="center">
+            Created by: <b>Gauri kewlani</b><br>
+            Course Code: VSEC-101-CA<br>
+            College: APIMR, Landewadi<br>
+            &copy; 2025 Savitribai Phule Pune University
+        </p>
+    </footer>
+ 
+</body>
+</html>
+
